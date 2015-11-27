@@ -62,3 +62,16 @@ tr,td,th{
 .content>img:hover{
     width:100%;
 }
+form{
+  width:90%;
+  margin: 0 auto;
+}
+label{
+  width:40%;
+  float:left;
+  text-align: right;
+  margin-right:2%;
+}
+#booking{
+  text-align: center;
+}
