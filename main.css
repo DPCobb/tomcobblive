@@ -70,4 +70,8 @@ label{
   width:40%;
   float:left;
   text-align: right;
+  margin-right:2%;
+}
+#booking{
+  text-align: center;
 }
