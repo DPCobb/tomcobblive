@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tom Cobb Live</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Monda:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        $(document).ready(function(){
+            $("#live").click(function(){
+                $("#info").animate({height: "700px", width: "100%"});
+                $("#info").css("visibility", "visible");
+                $("#info").load("shows.html");
+            });
+            $("#contact").click(function(){
+                $("#info").animate({height: "700px", width: "100%"});
+                $("#info").css("visibility", "visible");
+                $("#info").load("test.html");
+            });
+            $("#photo").click(function(){
+                $("#info").animate({height: "700px", width: "100%"});
+                $("#info").css("visibility", "visible");
+                $("#info").load("photos.html");
+            });
+            $("#media").click(function(){
+                $("#info").animate({height: "700px", width: "100%"});
+                $("#info").css("visibility", "visible");
+                $("#info").load("media.html");
+            });
+            $("#about").click(function(){
+                $("#info").animate({height: "700px", width: "100%"});
+                $("#info").css("visibility", "visible");
+                $("#info").load("about.html");
+            });
+            $("#home").click(function(){
+                $("#info").animate({height: "0px", width: "0%"});
+                $("#info").css("visibility", "hidden");
+            });
+            $("#news").click(function(){
+                $("#info").animate({height: "700px", width: "100%"});
+                $("#info").css("visibility", "visible");
+                $("#info").load("news.html");
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+        <div class="main">
+            <h1>Tom Cobb</h1>
+            <p><button value="Home" id="home">Home</button>
+                <button value="Live" id="live">Live</button>
+                <button value="Media" id="news">News</button>
+                <button value="Media" id="about">About</button>
+                <button value="contact" id="contact">Contact</button>
+                <button value="Photos" id="photo">Photos</button>
+                <button value="Media" id="media">Media</button>
+            </p>
+
+        </div>
+        </div>
+        <div class="col-sm-4">
+        <div class="content" id="info">
+
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
