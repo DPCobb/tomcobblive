@@ -75,3 +75,7 @@ label{
 #booking{
   text-align: center;
 }
+#form-submit{
+  float:right;
+  margin-right:2%;
+}
